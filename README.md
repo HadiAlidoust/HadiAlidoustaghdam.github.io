@@ -1,2 +1,2 @@
-# HadiAlidoustaghdam.github.io
+# HadiAlidoust.github.io
 Personal Website of Hadi Alidoustaghdam
