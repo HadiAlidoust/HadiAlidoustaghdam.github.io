@@ -2,1607 +2,1032 @@
 <html lang="en">
 
 <head>
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "wu3mco89x7");
+</script>
+
+
+
+
+
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Hadi Alidoust | RF & Microwave Engineer</title>
+    <title>Hadi Alidoust</title>
 
-    <meta name="description"
-          content="Portfolio of Hadi Alidoust — RF & Microwave Engineer working across radar, computational imaging, sensing, phased arrays and wave physics.">
-
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "wu3mco89x7");
-    </script>
-
-    <!-- Font Awesome -->
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        :root{
-            --bg:#090d12;
-            --bg-soft:#0d131b;
-            --surface:#111923;
-            --surface-2:#151f2b;
 
-            --text:#f5f7fa;
-            --text-soft:#c7d0da;
-            --muted:#8996a5;
+:root{
+    --bg:#0b1110;
+    --card:#151c1a;
+    --primary:#b7d8cc;
+    --text:#f4f7f6;
+}
 
-            --accent:#80c7df;
-            --accent-strong:#a8dcef;
-            --accent-soft:rgba(128,199,223,0.10);
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        outline:none;
+    }
 
-            --line:rgba(255,255,255,0.09);
-            --line-strong:rgba(255,255,255,0.15);
+    html{
+        scroll-behavior:smooth;
+    }
+section{
+    scroll-margin-top:120px;
+}
+body{
+    font-family:'Inter', sans-serif;
+    color:var(--text);
+    line-height:1.7;
 
-            --shadow:0 20px 60px rgba(0,0,0,0.28);
+    background:
+    linear-gradient(
+        rgba(4,14,11,0.65)
+     rgba(6,18,15,0.72)
+    ),
+    url("BackGround_Website.png");
 
-            --radius-lg:22px;
-            --radius-md:14px;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 
-            --max-width:1160px;
+    /* REMOVE THIS */
+    /* background-attachment:fixed; */
+
+    min-height:100vh;
+}
+
+    .container{
+        width:90%;
+        max-width:1100px;
+        margin:auto;
+    }
+
+    nav{
+        position:sticky;
+        top:0;
+        z-index:100;
+        backdrop-filter:blur(6px);
+        background:rgba(7,20,16,0.78);
+        border-bottom:1px solid rgba(255,255,255,0.06);
+        backdrop-filter:blur(18px);
+    }
+
+    nav ul{
+        display:flex;
+        justify-content:center;
+        list-style:none;
+        padding:18px;
+        gap:35px;
+        flex-wrap:wrap;
+    }
+
+    nav a{
+        color:var(--text);
+        text-decoration:none;
+        font-size:17px;
+        transition:0.3s;
+    }
+
+nav a:hover{
+    background:rgba(52,211,153,0.10);
+}
+
+header{
+    position:relative;
+    min-height:85vh;
+    display:flex;
+    align-items:center;
+
+    overflow:hidden;
+}
+    .profile-photo{
+        width:180px;
+        height:180px;
+        border-radius:50%;
+        object-fit:cover;
+        margin-bottom:25px;
+        border:4px solid var(--primary);
+        box-shadow:0 0 30px rgba(52,211,153,0.22);
+        transition:0.4s;
+    }
+.profile-photo:hover{
+    transform:scale(1.05);
+    box-shadow:
+    0 0 60px rgba(56,189,248,0.45);
+}
+    header h1{
+        font-size:58px;
+        color:#f8fafc;
+        margin-bottom:15px;
+        letter-spacing:1px;
+    }
+
+ header p{
+        font-size:20px;
+        color:#cbd5e1;
+        max-width:900px;
+        margin:auto;
+    }
+.hero{
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:60px;
+    padding:120px 8% 80px;
+
+    flex-wrap:wrap;
+
+    position:relative;
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.65),
+            rgba(0,0,0,0.75)
+        ),
+        url("images/bg.webp");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+        .hero-text{
+    background:rgba(15,23,42,0.45);
+
+    padding:30px;
+
+    border-radius:22px;
+
+    backdrop-filter:blur(4px);
+}
+.section{
+    margin-top:50px;
+
+    background:rgba(10,30,24,0.82);
+
+    border:1px solid rgba(52,211,153,0.14);
+
+    padding:40px;
+
+    border-radius:22px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.35),
+    0 0 30px rgba(52,211,153,0.10);
+
+    backdrop-filter:blur(10px);
+
+    transition:0.3s;
+}
+
+.section:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,0.4),
+    0 0 35px rgba(52,211,153,0.14);
+}
+
+    h2{
+        color:#e5eeee;
+        margin-bottom:24px;
+        font-size:36px;
+    }
+
+    h3{
+        color:#f1f5f4;
+        margin-bottom:12px;
+        font-size:24px;
+    }
+
+    p{
+       color:#f8fafc;
+        font-size:19px;
+        margin-bottom:19px;
+        line-height:1.8;
+    }
+
+    ul{
+        padding-left:24px;
+    }
+
+li{
+    margin-bottom:16px;
+    color:#f8fafc;
+    font-size:18px;
+}
+
+    a{
+        color:var(--primary);
+        text-decoration:none;
+        transition:0.3s;
+    }
+
+    a:hover{
+        color:#7dd3fc;
+    }
+
+.button{
+    display:inline-block;
+
+    margin-top:12px;
+
+    padding:10px 18px;
+
+    background:rgba(52,211,153,0.14);
+
+    border:1px solid rgba(52,211,153,0.30);
+
+    border-radius:10px;
+
+    color:#d1fae5;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    transition:0.3s;
+
+    backdrop-filter:blur(6px);
+}
+
+.button:hover{
+
+    background:rgba(52,211,153,0.22);
+
+    color:white;
+
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 6px 18px rgba(52,211,153,0.18);
+}
+
+    .skills{
+        display:flex;
+        flex-wrap:wrap;
+        gap:12px;
+        margin-top:15px;
+    }
+
+  .skill{
+
+    padding:12px 18px;
+
+    border-radius:40px;
+
+   border:1px solid rgba(52,211,153,0.20);
+
+background:rgba(18,26,23,0.88);
+    color:#f8fafc;
+    font-size:16px;
+
+    transition:0.3s;
+
+    cursor:default;
+}
+
+.skill:hover{
+
+    transform:translateY(-3px);
+
+    background:#1e293b;
+
+    border-color:rgba(56,189,248,0.45);
+
+    box-shadow:
+    0 8px 20px rgba(52,211,153,0.14)
+}
+
+    .project{
+        margin-top:45px;
+        padding-bottom:25px;
+        border-bottom:1px solid rgba(255,255,255,0.08);
+    }
+
+    .project:last-child{
+        border-bottom:none;
+    }
+
+    .image-grid{
+        display:grid;
+        grid-template-columns:repeat(2, 1fr);
+        gap:20px;
+        margin-top:25px;
+        justify-items:center;
+    }
+
+.image-card{
+    background:var(--bg);
+    padding:12px;
+    border-radius:16px;
+    width:100%;
+    max-width:460px;
+    overflow:hidden;
+    position:relative;
+}
+.zoom-container{
+    width:100%;
+    height:260px;
+
+    overflow:hidden;
+
+    border-radius:12px;
+
+    background:#111827;
+
+    cursor:grab;
+
+    position:relative;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+        .zoom-container:active{
+    cursor:grabbing;
+}
+
+.job-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    color:#dbeafe;
+
+    font-size:28px;
+
+    margin-bottom:14px;
+
+    flex-wrap:wrap;
+}
+
+.inline-logo{
+
+    width:58px;
+
+    height:58px;
+
+    object-fit:contain;
+
+    background:white;
+
+    padding:3px;
+
+    border-radius:10px;
+}
+.project-image{
+
+    max-width:100%;
+    max-height:100%;
+
+    object-fit:contain;
+
+    transition:transform 0.15s ease;
+
+    transform-origin:center center;
+
+    user-select:none;
+
+    pointer-events:none;
+
+    will-change:transform;
+}
+
+
+.image-caption{
+    font-size:16px;
+    margin-top:13px;
+    color:white;
+    font-weight:400;
+    text-align:left;
+}
+
+    #contact p{
+        display:flex;
+        align-items:center;
+        gap:12px;
+        font-size:17px;
+    }
+
+    #contact p i{
+        color:var(--primary);
+        font-size:22px;
+    }
+
+    .social-icons{
+        display:flex;
+        gap:30px;
+        margin-top:30px;
+    }
+
+    .social-icons a{
+        color:var(--primary);
+        font-size:36px;
+        transition:0.3s;
+    }
+
+    .social-icons a:hover{
+        color:#7dd3fc;
+        transform:translateY(-4px) scale(1.12);
+    }
+
+    footer{
+        text-align:center;
+        padding:50px 0;
+        color:#94a3b8;
+        font-size:14px;
+    }
+
+@media (max-width:768px){
+
+    .hero{
+        min-height:auto;
+
+        padding:120px 6% 60px;
+
+        gap:35px;
+
+        background-position:65% center;
+
+        background-attachment:scroll;
+    }
+
+}
+
+        header h1{
+            font-size:40px;
         }
 
-        *{
-            box-sizing:border-box;
-            margin:0;
-            padding:0;
-        }
-
-        html{
-            scroll-behavior:smooth;
-        }
-
-        body{
-            min-height:100vh;
-            overflow-x:hidden;
-
-            font-family:"Inter",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-            color:var(--text);
-            line-height:1.7;
-
-            background:
-                radial-gradient(circle at 15% 10%, rgba(86,154,181,0.12), transparent 28%),
-                radial-gradient(circle at 88% 22%, rgba(72,104,133,0.10), transparent 26%),
-                linear-gradient(180deg, #080c11 0%, #0a1017 50%, #090d12 100%);
-        }
-
-        body::before{
-            content:"";
-            position:fixed;
-            inset:0;
-            pointer-events:none;
-            z-index:-1;
-
-            background-image:
-                linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px);
-
-            background-size:56px 56px;
-            mask-image:linear-gradient(to bottom, black, transparent 82%);
-        }
-
-        ::selection{
-            background:rgba(128,199,223,0.28);
-            color:white;
-        }
-
-        a{
-            color:inherit;
-            text-decoration:none;
-        }
-
-        img{
-            display:block;
-            max-width:100%;
-        }
-
-        section{
-            scroll-margin-top:105px;
-        }
-
-        .container{
-            width:min(92%, var(--max-width));
-            margin-inline:auto;
-        }
-
-        /* =========================
-           NAVIGATION
-        ========================== */
-
-        nav{
-            position:sticky;
-            top:0;
-            z-index:1000;
-
-            border-bottom:1px solid var(--line);
-            background:rgba(9,13,18,0.78);
-            backdrop-filter:blur(18px);
-            -webkit-backdrop-filter:blur(18px);
-        }
-
-        .nav-inner{
-            width:min(92%, var(--max-width));
-            min-height:72px;
-            margin-inline:auto;
-
-            display:flex;
-            align-items:center;
-            justify-content:space-between;
-            gap:30px;
-        }
-
-        .nav-brand{
-            display:flex;
-            align-items:center;
-            gap:12px;
-
-            font-size:14px;
-            font-weight:700;
-            letter-spacing:0.12em;
-            text-transform:uppercase;
-            white-space:nowrap;
-        }
-
-        .nav-brand-mark{
-            width:9px;
-            height:9px;
-            border-radius:50%;
-            background:var(--accent);
-            box-shadow:0 0 18px rgba(128,199,223,0.5);
-        }
-
-        nav ul{
-            display:flex;
-            align-items:center;
-            justify-content:flex-end;
-            flex-wrap:wrap;
-            gap:4px;
-
-            list-style:none;
-        }
-
-        nav a.nav-link{
-            display:inline-flex;
-            align-items:center;
-
-            padding:8px 11px;
-            border-radius:9px;
-
-            color:var(--muted);
-            font-size:14px;
-            font-weight:500;
-
-            transition:
-                color .2s ease,
-                background .2s ease;
-        }
-
-        nav a.nav-link:hover,
-        nav a.nav-link.active{
-            color:var(--text);
-            background:rgba(255,255,255,0.055);
-        }
-
-        /* =========================
-           HERO
-        ========================== */
-
-        header{
-            position:relative;
-        }
-
-        .hero{
-            min-height:calc(100vh - 72px);
-
-            display:grid;
-            grid-template-columns:minmax(250px, 330px) 1fr;
-            align-items:center;
-            gap:72px;
-
-            padding-block:100px;
-        }
-
-        .hero-photo-wrap{
-            position:relative;
-            width:min(100%, 310px);
-            aspect-ratio:1;
-            justify-self:center;
-        }
-
-        .hero-photo-wrap::before{
-            content:"";
-            position:absolute;
-            inset:-18px;
-            border:1px solid rgba(128,199,223,0.17);
-            border-radius:50%;
-        }
-
-        .hero-photo-wrap::after{
-            content:"";
-            position:absolute;
-            width:78px;
-            height:1px;
-            right:-46px;
-            top:50%;
-            background:linear-gradient(90deg, rgba(128,199,223,0.7), transparent);
-        }
-
-        .profile-photo{
-            width:100%;
-            height:100%;
-            object-fit:cover;
-
-            border-radius:50%;
-            border:1px solid rgba(255,255,255,0.14);
-
-            box-shadow:
-                0 30px 80px rgba(0,0,0,0.38),
-                0 0 0 7px rgba(255,255,255,0.025);
-        }
-
-        .hero-content{
-            max-width:760px;
-        }
-
-        .eyebrow{
-            display:flex;
-            align-items:center;
-            gap:10px;
-
-            margin-bottom:20px;
-
-            color:var(--accent-strong);
-            font-size:13px;
-            font-weight:700;
-            letter-spacing:0.16em;
-            text-transform:uppercase;
-        }
-
-        .eyebrow::before{
-            content:"";
-            width:34px;
-            height:1px;
-            background:var(--accent);
-        }
-
-        .hero h1{
-            margin-bottom:18px;
-
-            font-size:clamp(48px, 7vw, 82px);
-            line-height:0.98;
-            letter-spacing:-0.055em;
-            font-weight:700;
-
-            color:#ffffff;
-        }
-
-        .hero-role{
-            max-width:760px;
-            margin-bottom:26px;
-
-            color:var(--text-soft);
-            font-size:clamp(20px, 2.2vw, 29px);
-            line-height:1.45;
-            letter-spacing:-0.02em;
-            font-weight:400;
-        }
-
-        .hero-role strong{
-            color:var(--text);
-            font-weight:600;
-        }
-
-        .hero-summary{
-            max-width:680px;
-            margin-bottom:34px;
-
-            color:var(--muted);
-            font-size:17px;
-            line-height:1.8;
-        }
-
-        .hero-actions{
-            display:flex;
-            flex-wrap:wrap;
-            gap:12px;
-        }
-
-        .button{
-            display:inline-flex;
-            align-items:center;
-            justify-content:center;
-            gap:9px;
-
-            min-height:46px;
-            padding:11px 17px;
-
-            border:1px solid var(--line-strong);
-            border-radius:10px;
-
-            background:rgba(255,255,255,0.045);
-            color:var(--text);
-
-            font-size:14px;
-            font-weight:600;
-
-            transition:
-                transform .2s ease,
-                border-color .2s ease,
-                background .2s ease;
-        }
-
-        .button:hover{
-            transform:translateY(-2px);
-            border-color:rgba(128,199,223,0.38);
-            background:rgba(128,199,223,0.08);
-        }
-
-        .button.primary{
-            border-color:rgba(128,199,223,0.42);
-            background:rgba(128,199,223,0.12);
-            color:#eaf9ff;
-        }
-
-        /* =========================
-           MAIN SECTIONS
-        ========================== */
-
-        main{
-            padding-bottom:70px;
+        header p{
+    font-size:24px;
+    color:#cbd5e1;
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
         }
 
         .section{
-            position:relative;
-
-            margin-top:30px;
-            padding:clamp(30px, 5vw, 52px);
-
-            border:1px solid var(--line);
-            border-radius:var(--radius-lg);
-
-            background:
-                linear-gradient(
-                    180deg,
-                    rgba(255,255,255,0.035),
-                    rgba(255,255,255,0.018)
-                );
-
-            box-shadow:var(--shadow);
-
-            overflow:hidden;
+            padding:25px;
         }
 
-        .section::before{
-            content:"";
-            position:absolute;
-            left:0;
-            top:0;
-            width:100%;
-            height:1px;
-
-            background:linear-gradient(
-                90deg,
-                transparent,
-                rgba(128,199,223,0.40),
-                transparent
-            );
-            opacity:.55;
-        }
-
-        .section-header{
-            display:grid;
-            grid-template-columns:180px 1fr;
-            gap:32px;
-            align-items:start;
-
-            margin-bottom:34px;
-        }
-
-        .section-kicker{
-            padding-top:7px;
-
-            color:var(--muted);
-            font-size:12px;
-            font-weight:700;
-            letter-spacing:.15em;
-            text-transform:uppercase;
-        }
-
-        h2{
-            font-size:clamp(30px,4vw,44px);
-            line-height:1.15;
-            letter-spacing:-0.035em;
-            font-weight:650;
-            color:#f8fafc;
-        }
-
-        h3{
-            color:#f3f6f8;
-            font-size:24px;
-            line-height:1.35;
-            letter-spacing:-0.02em;
-            font-weight:600;
-        }
-
-        p{
-            color:var(--text-soft);
-            font-size:17px;
-            line-height:1.85;
-        }
-
-        strong{
-            color:#edf3f7;
-        }
-
-        .clean-list{
-            list-style:none;
-            padding:0;
-
-            display:grid;
+        nav ul{
             gap:15px;
         }
+    }
 
-        .clean-list li{
-            position:relative;
-            padding-left:24px;
-
-            color:var(--text-soft);
-            font-size:17px;
-            line-height:1.75;
-        }
-
-        .clean-list li::before{
-            content:"";
-            position:absolute;
-            left:0;
-            top:.77em;
-
-            width:7px;
-            height:7px;
-
-            border:1px solid var(--accent);
-            border-radius:50%;
-        }
-
-        .about-actions{
-            margin-top:30px;
-
-            display:flex;
-            flex-wrap:wrap;
-            gap:12px;
-        }
-
-        /* =========================
-           EXPERTISE
-        ========================== */
-
-        .expertise-grid{
-            display:grid;
-            grid-template-columns:repeat(3,1fr);
-            gap:12px;
-        }
-
-        .expertise-item{
-            min-height:108px;
-            padding:20px;
-
-            border:1px solid var(--line);
-            border-radius:var(--radius-md);
-
-            background:rgba(255,255,255,0.025);
-
-            display:flex;
-            align-items:flex-end;
-
-            color:#e8edf1;
-            font-size:15px;
-            font-weight:600;
-
-            transition:
-                transform .2s ease,
-                border-color .2s ease,
-                background .2s ease;
-        }
-
-        .expertise-item:hover{
-            transform:translateY(-3px);
-            border-color:rgba(128,199,223,0.28);
-            background:rgba(128,199,223,0.045);
-        }
-
-        /* =========================
-           EXPERIENCE
-        ========================== */
-
-        .experience-list{
-            display:grid;
-        }
-
-        .experience-item{
-            display:grid;
-            grid-template-columns:82px 1fr;
-            gap:24px;
-
-            padding:32px 0;
-
-            border-top:1px solid var(--line);
-        }
-
-        .experience-item:first-child{
-            border-top:0;
-            padding-top:4px;
-        }
-
-        .company-logo-wrap{
-            width:68px;
-            height:68px;
-
-            display:flex;
-            align-items:center;
-            justify-content:center;
-
-            border:1px solid var(--line);
-            border-radius:14px;
-            background:#f6f7f8;
-            padding:7px;
-        }
-
-        .inline-logo{
-            width:100%;
-            height:100%;
-            object-fit:contain;
-        }
-
-        .experience-head{
-            display:flex;
-            justify-content:space-between;
-            gap:24px;
-            align-items:flex-start;
-
-            margin-bottom:14px;
-        }
-
-        .experience-company{
-            margin-top:6px;
-            color:var(--muted);
-            font-size:14px;
-        }
-
-        .experience-period{
-            flex:0 0 auto;
-
-            padding:5px 9px;
-
-            border:1px solid var(--line);
-            border-radius:8px;
-
-            color:var(--muted);
-            font-size:12px;
-            font-weight:600;
-            letter-spacing:.04em;
-        }
-
-        /* =========================
-           PROJECTS
-        ========================== */
-
-        .project{
-            padding:38px 0;
-            border-top:1px solid var(--line);
-        }
-
-        .project:first-of-type{
-            border-top:0;
-            padding-top:2px;
-        }
-
-        .project-title-row{
-            display:flex;
-            justify-content:space-between;
-            gap:30px;
-            align-items:flex-start;
-
-            margin-bottom:18px;
-        }
-
-        .project-index{
-            color:var(--muted);
-            font-size:12px;
-            font-weight:700;
-            letter-spacing:.14em;
-        }
-
-        .project-description{
-            max-width:850px;
-            margin-bottom:15px;
-        }
-
-        .tech-line{
-            margin-top:13px;
-
-            color:var(--muted);
-            font-size:14px;
-        }
-
-        .tech-line strong{
-            color:var(--text-soft);
-        }
-
-        .image-grid{
-            margin-top:26px;
-
-            display:grid;
-            grid-template-columns:repeat(2, minmax(0,1fr));
-            gap:16px;
-        }
-
-        .image-card{
-            min-width:0;
-
-            border:1px solid var(--line);
-            border-radius:16px;
-            overflow:hidden;
-
-            background:rgba(255,255,255,0.02);
-        }
-
-        .zoom-container{
-            width:100%;
-            height:290px;
-
-            display:flex;
-            align-items:center;
-            justify-content:center;
-
-            overflow:hidden;
-            cursor:grab;
-
-            background:#0b1016;
-        }
-
-        .zoom-container:active{
-            cursor:grabbing;
-        }
-
-        .project-image{
-            max-width:100%;
-            max-height:100%;
-
-            object-fit:contain;
-
-            transition:transform .12s ease;
-            transform-origin:center center;
-
-            user-select:none;
-            pointer-events:none;
-            will-change:transform;
-        }
-
-        .image-caption{
-            padding:14px 16px 16px;
-
-            border-top:1px solid var(--line);
-
-            color:var(--muted);
-            font-size:13px;
-            line-height:1.6;
-        }
-
-        /* =========================
-           SKILLS
-        ========================== */
-
-        .skills{
-            display:flex;
-            flex-wrap:wrap;
-            gap:9px;
-        }
-
-        .skill{
-            display:inline-flex;
-            align-items:center;
-
-            min-height:38px;
-            padding:8px 13px;
-
-            border:1px solid var(--line);
-            border-radius:999px;
-
-            background:rgba(255,255,255,0.025);
-
-            color:var(--text-soft);
-            font-size:13px;
-            font-weight:500;
-
-            transition:
-                border-color .2s ease,
-                background .2s ease,
-                color .2s ease;
-        }
-
-        .skill:hover{
-            border-color:rgba(128,199,223,0.28);
-            background:rgba(128,199,223,0.055);
-            color:white;
-        }
-
-        /* =========================
-           CONTACT
-        ========================== */
-
-        .contact-layout{
-            display:grid;
-            grid-template-columns:1.2fr .8fr;
-            gap:50px;
-            align-items:end;
-        }
-
-        .contact-copy{
-            max-width:670px;
-        }
-
-        .social-icons{
-            display:flex;
-            justify-content:flex-end;
-            gap:10px;
-        }
-
-        .social-icons a{
-            width:48px;
-            height:48px;
-
-            display:inline-flex;
-            align-items:center;
-            justify-content:center;
-
-            border:1px solid var(--line);
-            border-radius:11px;
-
-            background:rgba(255,255,255,0.025);
-            color:var(--text-soft);
-
-            font-size:19px;
-
-            transition:
-                transform .2s ease,
-                border-color .2s ease,
-                color .2s ease,
-                background .2s ease;
-        }
-
-        .social-icons a:hover{
-            transform:translateY(-2px);
-            border-color:rgba(128,199,223,0.35);
-            background:rgba(128,199,223,0.06);
-            color:var(--accent-strong);
-        }
-
-        /* =========================
-           FOOTER
-        ========================== */
-
-        footer{
-            width:min(92%, var(--max-width));
-            margin-inline:auto;
-
-            padding:34px 0 48px;
-
-            display:flex;
-            justify-content:space-between;
-            gap:20px;
-            flex-wrap:wrap;
-
-            color:#707d8b;
-            font-size:12px;
-
-            border-top:1px solid var(--line);
-        }
-
-        /* =========================
-           RESPONSIVE
-        ========================== */
-
-        @media (max-width:900px){
-            .nav-brand{
-                display:none;
-            }
-
-            .nav-inner{
-                justify-content:center;
-            }
-
-            nav ul{
-                justify-content:center;
-            }
-
-            .hero{
-                grid-template-columns:1fr;
-                gap:48px;
-                text-align:center;
-                padding-block:75px;
-            }
-
-            .hero-photo-wrap{
-                width:min(65vw, 260px);
-            }
-
-            .hero-photo-wrap::after{
-                display:none;
-            }
-
-            .eyebrow,
-            .hero-actions{
-                justify-content:center;
-            }
-
-            .hero-summary,
-            .hero-role{
-                margin-left:auto;
-                margin-right:auto;
-            }
-
-            .section-header{
-                grid-template-columns:1fr;
-                gap:8px;
-            }
-
-            .expertise-grid{
-                grid-template-columns:repeat(2,1fr);
-            }
-
-            .contact-layout{
-                grid-template-columns:1fr;
-            }
-
-            .social-icons{
-                justify-content:flex-start;
-            }
-        }
-
-        @media (max-width:680px){
-            nav{
-                position:relative;
-            }
-
-            .nav-inner{
-                min-height:auto;
-                padding:10px 0;
-            }
-
-            nav ul{
-                gap:2px;
-            }
-
-            nav a.nav-link{
-                padding:7px 8px;
-                font-size:12px;
-            }
-
-            .hero{
-                min-height:auto;
-                padding:62px 0 75px;
-            }
-
-            .hero h1{
-                font-size:48px;
-            }
-
-            .hero-role{
-                font-size:19px;
-            }
-
-            .hero-summary{
-                font-size:15px;
-            }
-
-            .section{
-                padding:26px 21px;
-                border-radius:17px;
-            }
-
-            .expertise-grid{
-                grid-template-columns:1fr;
-            }
-
-            .experience-item{
-                grid-template-columns:1fr;
-                gap:16px;
-            }
-
-            .company-logo-wrap{
-                width:58px;
-                height:58px;
-            }
-
-            .experience-head{
-                flex-direction:column;
-                gap:10px;
-            }
-
-            .project-title-row{
-                flex-direction:column-reverse;
-                gap:10px;
-            }
-
-            .image-grid{
-                grid-template-columns:1fr;
-            }
-
-            .zoom-container{
-                height:240px;
-            }
-
-            footer{
-                flex-direction:column;
-            }
-        }
-
-        @media (prefers-reduced-motion:reduce){
-            html{
-                scroll-behavior:auto;
-            }
-
-            *,
-            *::before,
-            *::after{
-                transition:none !important;
-            }
-        }
     </style>
+
 </head>
 
 <body>
 
-    <!-- NAVIGATION -->
-    <nav aria-label="Main navigation">
-        <div class="nav-inner">
-            <a class="nav-brand" href="#top" aria-label="Back to top">
-                <span class="nav-brand-mark"></span>
-                Hadi Alidoust
-            </a>
-
-            <ul>
-                <li><a class="nav-link" href="#about">About</a></li>
-                <li><a class="nav-link" href="#expertise">Expertise</a></li>
-                <li><a class="nav-link" href="#experience">Experience</a></li>
-                <li><a class="nav-link" href="#projects">Projects</a></li>
-                <li><a class="nav-link" href="#skills">Skills</a></li>
-                <li><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-        </div>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+        </ul>
     </nav>
 
-    <!-- HERO -->
-    <header id="top">
-        <div class="container hero">
+    <header>
 
-            <div class="hero-photo-wrap">
-                <img
-                    src="Profile_photo.png"
-                    alt="Portrait of Hadi Alidoust"
-                    class="profile-photo">
-            </div>
+<div class="container hero">
 
-            <div class="hero-content">
-                <div class="eyebrow">RF · Microwave · Sensing</div>
+    <img src="Profile_photo.png"
+    alt="Hadi Alidoust"
+    class="profile-photo">
 
-                <h1>Hadi Alidoust</h1>
+    <div class="hero-text">
 
-                <p class="hero-role">
-                    <strong>RF & Microwave Engineer</strong> working across radar,
-                    computational imaging and wave-based sensing.
-                </p>
+        <h1>Hadi Alidoust</h1>
 
-                <p class="hero-summary">
-                    I develop physics-driven sensing systems that connect
-                    electromagnetic and acoustic wave propagation with signal
-                    processing, computational imaging, optimization and experimental
-                    validation.
-                </p>
+        <p>
+           • RF & Microwave Engineer • 
+             Computational Imaging • Wave Physics 
+        </p>
 
-                <div class="hero-actions">
-                    <a class="button primary" href="cv.pdf" target="_blank" rel="noopener">
-                        <i class="fa-regular fa-file-lines"></i>
-                        View CV
-                    </a>
+    </div>
 
-                    <a class="button" href="My_Publications_Hadi.pdf" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-book-open"></i>
-                        Publications
-                    </a>
+</div>
 
-                    <a class="button" href="#projects">
-                        <i class="fa-solid fa-wave-square"></i>
-                        Selected work
-                    </a>
-                </div>
-            </div>
-
-        </div>
     </header>
 
-    <main class="container">
+    <div class="container">
 
         <!-- ABOUT -->
-        <section class="section" id="about">
-            <div class="section-header">
-                <div class="section-kicker">Profile</div>
-                <h2>Engineering at the intersection of RF, sensing and computation.</h2>
-            </div>
+   <section class="section" id="about">
 
-            <ul class="clean-list">
-                <li>
-                    Wireless systems and RF engineer with strong knowledge in
-                    signal processing, wireless communication and sensing systems.
-                </li>
-                <li>
-                    R&D experience in microwave circuits and antenna design.
-                </li>
-                <li>
-                    Extensive experience in electromagnetic simulation, product
-                    development, prototyping and proof-of-concept measurements.
-                </li>
-                <li>
-                    PhD from the University of Twente focused on Joint Communication
-                    and Sensing using tiled-array architectures for next-generation
-                    wireless systems.
-                </li>
+            <h2>About Me</h2>
+
+
+<ul>    
+
+    <li>Wireless systems and RF engineer with strong knowledge in signal processing, wireless communication, and sensing systems</li>
+    <li>R&D experience in microwave circuits and antenna design</li>
+    <li>Extensive experience in electromagnetic simulations, product development, prototyping, and proof-of-concept measurements </li>
+    <li>PhD from the University of Twente focused on Joint Communication and Sensing  using tiled-array architectures for next-generation wireless systems.</li>
+
+</ul>
+
+
+            <a class="button" href="cv.pdf" target="_blank">
+                Download CV
+            </a>
+           <a class="button" href="My_Publications_Hadi.pdf" target="_blank">
+                Download Publications
+             </a>
+
+       
+   </section>
+
+        <!-- RESEARCH -->
+    <section class="section" id="expertise">
+
+            <h2>Expertise</h2>
+
+            <ul>
+                <li>Microwave & RF Engineering</li>            
+                <li>Radar & Ultrasonic Sensing</li>
+                <li>Wave Physics</li>
+                <li>Inverse Problems & Optimization</li>
+                 <li>Scientific Computing</li>
+                <li>Computational Imaging</li>
+                
             </ul>
 
-            <div class="about-actions">
-                <a class="button" href="cv.pdf" target="_blank" rel="noopener">
-                    Download CV
-                </a>
-                <a class="button" href="My_Publications_Hadi.pdf" target="_blank" rel="noopener">
-                    Download Publications
-                </a>
-            </div>
-        </section>
+    </section>
 
-        <!-- EXPERTISE -->
-        <section class="section" id="expertise">
-            <div class="section-header">
-                <div class="section-kicker">Core areas</div>
-                <h2>Expertise</h2>
-            </div>
 
-            <div class="expertise-grid">
-                <div class="expertise-item">Microwave & RF Engineering</div>
-                <div class="expertise-item">Radar & Ultrasonic Sensing</div>
-                <div class="expertise-item">Wave Physics</div>
-                <div class="expertise-item">Inverse Problems & Optimization</div>
-                <div class="expertise-item">Scientific Computing</div>
-                <div class="expertise-item">Computational Imaging</div>
-            </div>
-        </section>
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+    <h2>Professional Experience</h2>
 
-        <!-- EXPERIENCE -->
-        <section class="section" id="experience">
-            <div class="section-header">
-                <div class="section-kicker">Career</div>
-                <h2>Professional Experience</h2>
-            </div>
+  <div class="project">
 
-            <div class="experience-list">
+   <h3 class="job-title">
 
-                <article class="experience-item">
-                    <div>
-                        <a class="company-logo-wrap"
-                           href="https://www.allseas.com/"
-                           target="_blank"
-                           rel="noopener"
-                           aria-label="Allseas website">
-                            <img
-                                src="Allseas_Logo.png"
-                                alt="Allseas logo"
-                                class="inline-logo">
-                        </a>
-                    </div>
+<a href="https://www.allseas.com/" target="_blank">
+    <img src="Allseas_Logo.png"
+    alt="Allseas Logo"
+    class="inline-logo">
+</a>
 
-                    <div>
-                        <div class="experience-head">
-                            <div>
-                                <h3>R&D Software Engineer — Ultrasonics</h3>
-                                <div class="experience-company">
-                                    Allseas Engineering · Eindhoven, Netherlands
-                                </div>
-                            </div>
+    R&D Software Engineer – Ultrasonics
 
-                            <div class="experience-period">2025 — Present</div>
-                        </div>
+</h3>
 
-                        <ul class="clean-list">
-                            <li>Phased-array ultrasonic inspection for oil & gas pipelines.</li>
-                            <li>Non-destructive testing systems and vision-based inspection.</li>
-                            <li>Signal-processing and imaging-algorithm development.</li>
-                        </ul>
-                    </div>
-                </article>
+<p>
+    <strong>
+        Allseas Engineering, Eindhoven, Netherlands | 2025–Present
+    </strong>
+</p>
 
-                <article class="experience-item">
-                    <div>
-                        <a class="company-logo-wrap"
-                           href="https://www.utwente.nl/"
-                           target="_blank"
-                           rel="noopener"
-                           aria-label="University of Twente website">
-                            <img
-                                src="UTWENTE_Logo.png"
-                                alt="University of Twente logo"
-                                class="inline-logo">
-                        </a>
-                    </div>
+   
 
-                    <div>
-                        <div class="experience-head">
-                            <div>
-                                <h3>PhD Researcher — Communication & Sensing</h3>
-                                <div class="experience-company">
-                                    University of Twente · Enschede, Netherlands
-                                </div>
-                            </div>
+    <ul>
 
-                            <div class="experience-period">2020 — 2024</div>
-                        </div>
+        <li>
+            Phased-array ultrasonic inspection for oil & gas pipelines
+        </li>
+        <li>     
+            Non-destructive testing systems, vision-based inspection
+        </li>
+        <li>
+            Signal processing and imaging algorithm development
+        </li>
 
-                        <ul class="clean-list">
-                            <li>
-                                Developed system-level models and optimization frameworks
-                                for 6G joint communication and sensing.
-                            </li>
-                            <li>
-                                Designed tiled-array RF front-end architectures with reduced
-                                hardware complexity for simultaneous communication and sensing.
-                            </li>
-                            <li>
-                                Developed mmWave radar signal-processing and imaging algorithms
-                                for human posture and vital-sign monitoring.
-                            </li>
-                        </ul>
-                    </div>
-                </article>
 
-                <article class="experience-item">
-                    <div>
-                        <div class="company-logo-wrap">
-                            <img
-                                src="Huawei_Logo.png"
-                                alt="Huawei logo"
-                                class="inline-logo">
-                        </div>
-                    </div>
 
-                    <div>
-                        <div class="experience-head">
-                            <div>
-                                <h3>Microwave Network Engineer</h3>
-                                <div class="experience-company">
-                                    Huawei · Tehran, Iran
-                                </div>
-                            </div>
+    </ul>
 
-                            <div class="experience-period">2016 — 2018</div>
-                        </div>
+</div>
+   <div class="project">
 
-                        <ul class="clean-list">
-                            <li>
-                                Designed and implemented tailored solutions for network
-                                expansion and optimization, with emphasis on performance
-                                and customer requirements.
-                            </li>
-                            <li>
-                                Managed wireless communication infrastructure and NOC
-                                services, contributing to network-performance monitoring
-                                and improvement.
-                            </li>
-                        </ul>
-                    </div>
-                </article>
 
-            </div>
-        </section>
 
-        <!-- PROJECTS -->
-        <section class="section" id="projects">
-            <div class="section-header">
-                <div class="section-kicker">Technical work</div>
-                <h2>Selected Projects</h2>
-            </div>
+<h3 class="job-title">
 
-            <!-- PROJECT 01 -->
-            <article class="project">
-                <div class="project-title-row">
-                    <h3>
-                        PhD Thesis: Joint Communication and Sensing Using Tiled Arrays
-                        for Human-Centric Applications
-                    </h3>
-                    <div class="project-index">01 / JCAS</div>
-                </div>
+<a href="https://www.utwente.nl/" target="_blank">
+    <img src="UTWENTE_Logo.png"
+    alt="University of Twente Logo"
+    class="inline-logo">
+</a>
 
-                <p class="project-description">
-                    Designed scenario-aware tiled antenna apertures for multi-user
-                    communication and multi-target sensing using optimization-driven
-                    channel-matching techniques.
-                </p>
+    PhD Researcher – Communication & Sensing
 
-                <p class="tech-line">
-                    <strong>Technologies:</strong>
-                    MATLAB · HFSS · mmWave Radar · Optimization · Beamforming
-                </p>
+</h3>
 
-                <div class="image-grid">
+<p>
+    <strong>
+        University of Twente, Enschede, Netherlands | 2020–2024
+    </strong>
+</p>
 
-                    <figure class="image-card">
-                        <div class="zoom-container">
-                            <img
-                                src="HBF_Scene.png"
-                                alt="JCAS tiled-array architecture"
-                                class="project-image">
-                        </div>
-                        <figcaption class="image-caption">
-                            Tiled-array architecture for Joint Communication and Sensing
-                        </figcaption>
-                    </figure>
+<ul>
 
-                    <figure class="image-card">
-                        <div class="zoom-container">
-                            <img
-                                src="Health_Monitoring.png"
-                                alt="mmWave radar health-monitoring concept"
-                                class="project-image">
-                        </div>
-                        <figcaption class="image-caption">
-                            mmWave radar for posture and vital-sign monitoring
-                        </figcaption>
-                    </figure>
+    <li>
+        Developed system-level models and optimization frameworks
+        for 6G joint communication and sensing
+    </li>
 
-                </div>
-            </article>
+    <li>
+        Designed tiled-array RF front-end architectures with  reduced hardware complexity
+        for simultaneous communication and sensing.
+    </li>
 
-            <!-- PROJECT 02 -->
-            <article class="project">
-                <div class="project-title-row">
-                    <h3>M.Sc. Thesis: Microwave Imaging</h3>
-                    <div class="project-index">02 / IMAGING</div>
-                </div>
+    <li>
+        Developed mmWave radar signal processing and imaging
+        algorithms for human posture and vital-sign monitoring
+    </li>
 
-                <ul class="clean-list">
-                    <li>
-                        Developed microwave imaging systems for industrial monitoring
-                        and biomedical applications using inverse-scattering methods,
-                        HFSS electromagnetic simulations and qualitative reconstruction
-                        algorithms.
-                    </li>
-                    <li>
-                        The project included microwave pipeline monitoring, breast-tumor
-                        imaging, cavity-based sensing systems and multifrequency
-                        electromagnetic imaging techniques.
-                    </li>
-                </ul>
+</ul>
 
-                <p class="tech-line">
-                    <strong>Technologies:</strong>
-                    MATLAB · HFSS · CST · Microwave Imaging · Inverse Problems
-                </p>
+</div>
 
-                <div class="image-grid">
+ <div class="project">
+<h3 class="job-title">
 
-                    <figure class="image-card">
-                        <div class="zoom-container">
-                            <img
-                                src="Pipe_HFSS.png"
-                                alt="HFSS simulation of microwave pipeline imaging"
-                                class="project-image">
-                        </div>
-                        <figcaption class="image-caption">
-                            HFSS simulation of cavity-based microwave imaging system
-                        </figcaption>
-                    </figure>
+    <img src="Huawei_Logo.png"
+    alt="Huawei Logo"
+    class="inline-logo">
 
-                    <figure class="image-card">
-                        <div class="zoom-container">
-                            <img
-                                src="Pipe_MW.png"
-                                alt="Microwave pipeline monitoring result"
-                                class="project-image">
-                        </div>
-                        <figcaption class="image-caption">
-                            Pipeline monitoring with microwaves
-                        </figcaption>
-                    </figure>
+    Microwave Network Engineer
 
-                    <figure class="image-card">
-                        <div class="zoom-container">
-                            <img
-                                src="Breast_HFSS.png"
-                                alt="HFSS simulation for breast imaging"
-                                class="project-image">
-                        </div>
-                        <figcaption class="image-caption">
-                            HFSS simulation of cavity-based breast imaging
-                        </figcaption>
-                    </figure>
+</h3>
 
-                    <figure class="image-card">
-                        <div class="zoom-container">
-                            <img
-                                src="Breast_MW.png"
-                                alt="Microwave breast imaging result"
-                                class="project-image">
-                        </div>
-                        <figcaption class="image-caption">
-                            Breast-tumor detection with microwaves
-                        </figcaption>
-                    </figure>
+<p>
+    <strong>
+        Huawei, Tehran, Iran | 2016–2018
+    </strong>
+</p>
 
-                </div>
-            </article>
+<ul>
 
-            <!-- PROJECT 03 -->
-            <article class="project">
-                <div class="project-title-row">
-                    <h3>B.Sc. Thesis: Mechanical RF Switching System</h3>
-                    <div class="project-index">03 / RF HARDWARE</div>
-                </div>
+    <li>
+ Designed and implemented tailored solutions for network expansion and optimization, focusing on enhancing performance and meeting customer requirements.
 
-                <ul class="clean-list">
-                    <li>
-                        Designed and developed a mechanical microwave switching
-                        structure for RF signal-routing applications.
-                    </li>
-                    <li>
-                        Investigated RF performance, insertion loss, signal isolation
-                        and switching behavior for microwave systems.
-                    </li>
-                </ul>
+    </li>
 
-                <p class="tech-line">
-                    <strong>Technologies:</strong>
-                    HFSS · Keysight ADS · Microwave Engineering · Circuit Modelling
-                </p>
+    <li>
+Managed wireless communication infrastructure and NOC services, contributing to overall network performance monitoring and improvements.
+    </li>
 
-                <div class="image-grid">
+</ul>
 
-                    <figure class="image-card">
-                        <div class="zoom-container">
-                            <img
-                                src="MW_SWITCH_photo.png"
-                                alt="Mechanical RF switching structure"
-                                class="project-image">
-                        </div>
-                        <figcaption class="image-caption">
-                            Simulation of RF switching structure in HFSS
-                        </figcaption>
-                    </figure>
+</div>
+</section>
 
-                    <figure class="image-card">
-                        <div class="zoom-container">
-                            <img
-                                src="ADS_MW_SWITCH.png"
-                                alt="ADS model of RF switching structure"
-                                class="project-image">
-                        </div>
-                        <figcaption class="image-caption">
-                            Circuit model of the RF switch in ADS
-                        </figcaption>
-                    </figure>
+        
+<!-- PROJECTS --> 
+ <section class="section" 
+            id="projects">
+    <h2>Selected Projects</h2> 
+    <!-- JCAS -->
+    <div class="project"> 
+        <h3> PhD Thesis: Joint communication and sensing using tiled arrays for human-centric applications</h3>
+        <p> Designed scenario-aware tiled antenna apertures for multi-user communication and multi-target sensing using optimization-driven channel matching techniques. 
+        </p> 
+        <p>
+<strong>Technologies:</strong>
+MATLAB, HFSS, mmWave radar, Optimization, Beamforming
+</p>
+      <div class="image-grid">
 
-                </div>
-            </article>
+    <div class="image-card">
 
-        </section>
+<div class="zoom-container">
+    <img src="HBF_Scene.png"
+    alt="JCAS Tiled Array"
+    class="project-image">
+</div>
 
-        <!-- SKILLS -->
-        <section class="section" id="skills">
-            <div class="section-header">
-                <div class="section-kicker">Toolbox</div>
-                <h2>Technical Skills</h2>
-            </div>
+        <p class="image-caption">
+            Tiled-array architecture for Joint Communication and Sensing
+        </p>
 
-            <div class="skills">
-                <span class="skill">RF Engineering</span>
-                <span class="skill">Radar Signal Processing</span>
-                <span class="skill">Ultrasonic Imaging</span>
-                <span class="skill">Microwave Imaging</span>
-                <span class="skill">Joint Communication & Sensing</span>
-                <span class="skill">Phased Arrays</span>
-                <span class="skill">Electromagnetic Simulation</span>
-                <span class="skill">HFSS & CST</span>
-                <span class="skill">Altium & ADS</span>
-                <span class="skill">MATLAB & Python</span>
-                <span class="skill">Signal Processing</span>
-                <span class="skill">Optimization Algorithms</span>
-                <span class="skill">Inverse Problems</span>
-                <span class="skill">Wireless Communication</span>
-                <span class="skill">NDT Systems</span>
-                <span class="skill">6G Systems</span>
-                <span class="skill">mmWave Systems</span>
-                <span class="skill">Vision Inspection</span>
-            </div>
-        </section>
+    </div>
 
+    <div class="image-card">
+<div class="zoom-container">
+        <img src="Health_Monitoring.png"
+        alt="Health Monitoring"
+      class="project-image">
+</div>
+        <p class="image-caption">
+            MmWave radar for posture and vital-sign monitoring
+        </p>
+
+    </div>
+
+</div>
+    </div>
+    
+<!-- Microwave Imaging -->
+<div class="project">
+
+    <h3>M.Sc. Thesis: Microwave Imaging</h3>
+
+    <ul>
+
+        <li>
+            Developed microwave imaging systems for industrial monitoring
+            and biomedical applications using inverse scattering methods,
+            HFSS electromagnetic simulations, and qualitative reconstruction algorithms.
+        </li>
+
+        <li>
+            The project included microwave pipeline monitoring,
+            breast tumor imaging, cavity-based sensing systems,
+            and multifrequency electromagnetic imaging techniques.
+        </li>
+
+    </ul>
+        <p>
+<strong>Technologies:</strong>
+MATLAB, HFSS, CST, Microwave imaging, Inverse problems
+</p>
+    <div class="image-grid">
+
+        <div class="image-card">
+<div class="zoom-container">
+            <img src="Pipe_HFSS.png"
+            alt="HFSS Simulation"
+            class="project-image">
+  </div>
+            <p class="image-caption">
+                HFSS simulation of cavity-based microwave imaging system
+            </p>
+
+        </div>
+
+        <div class="image-card">
+<div class="zoom-container">
+            <img src="Pipe_MW.png"
+            alt="Pipeline Imaging"
+            class="project-image">
+  </div>
+            <p class="image-caption">
+                Pipeline monitoring with microwaves
+            </p>
+
+        </div>
+
+        <div class="image-card">
+<div class="zoom-container">
+            <img src="Breast_HFSS.png"
+            alt="Breast HFSS"
+            class="project-image">
+</div>
+            <p class="image-caption">
+                HFSS simulation of cavity-based breast imaging
+            </p>
+
+        </div>
+
+        <div class="image-card">
+<div class="zoom-container">
+            <img src="Breast_MW.png"
+            alt="Breast Imaging"
+            class="project-image">
+</div>
+            <p class="image-caption">
+                Breast tumor detection with microwaves
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+            <!--Micrwave Switch-->
+            <div class="project">
+
+    <h3>B.Sc. Thesis: Mechanical RF Switching System</h3>
+
+    <ul>
+
+        <li>
+            Designed and developed a mechanical microwave switching
+            structure for RF signal routing applications.
+        </li>
+
+        <li>
+            Investigated RF performance, insertion loss,
+            signal isolation, and switching behavior
+            for microwave systems.
+        </li>
+
+    </ul>
+<strong>Technologies:</strong>
+ HFSS, Keysight ADS, Microwave engineering, Circuit model
+</p>
+    <div class="image-grid">
+
+        <div class="image-card">
+<div class="zoom-container">
+            <img src="MW_SWITCH_photo.png"
+            alt="Mechanical RF Switch"
+            class="project-image">
+</div>
+            <p class="image-caption">
+                Simulation of RF switching structure in HFSS
+            </p>
+
+        </div>
+
+        <div class="image-card">
+<div class="zoom-container">
+            <img src="ADS_MW_SWITCH.png"
+            alt="RF Switch Simulation"
+            class="project-image">
+</div>
+            <p class="image-caption">
+                Circuit model of the RF switch in ADS
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+<!-- SKILLS -->
+<section class="section" id="skills">
+
+    <h2>Technical Skills</h2>
+
+    <div class="skills">
+
+        <span class="skill">RF Engineering</span>
+        <span class="skill">Radar Signal Processing</span>
+        <span class="skill">Ultrasonic Imaging</span>
+        <span class="skill">Microwave Imaging</span>
+       <span class="skill">Joint Communication & Sensing</span>
+        <span class="skill">Phased Arrays</span>
+        <span class="skill">Electromagnetic Simulation</span>
+        <span class="skill">HFSS & CST</span>
+        <span class="skill">Altium & ADS</span>
+        <span class="skill">MATLAB & Python</span>
+        <span class="skill">Signal Processing</span>
+        <span class="skill">Optimization Algorithms</span>
+        <span class="skill">Inverse Problems</span>
+        <span class="skill">Wireless Communication</span>
+        <span class="skill">NDT Systems</span>
+        <span class="skill">6G Systems</span>
+        <span class="skill">mmWave Systems</span>
+        <span class="skill">Vision Inspection</span>
+    </div>
+
+</section>
+        
         <!-- CONTACT -->
         <section class="section" id="contact">
-            <div class="section-header">
-                <div class="section-kicker">Connect</div>
-                <h2>Contact</h2>
+
+            <h2>Contact</h2>
+
+            <div class="social-icons">
+                <a href="mailto:hadi.alidoustaghdam@gmail.com" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/hadi-alidoust/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="https://scholar.google.com/citations?user=oIqg4oYAAAAJ&hl=en" target="_blank">
+                    <i class="fas fa-graduation-cap"></i>
+                </a>
+
             </div>
 
-            <div class="contact-layout">
-                <p class="contact-copy">
-                    Interested in RF, microwave systems, sensing, computational imaging
-                    or high-tech R&D? You can reach me by email or connect through
-                    LinkedIn and Google Scholar.
-                </p>
-
-                <div class="social-icons">
-                    <a
-                        href="mailto:hadi.alidoustaghdam@gmail.com"
-                        aria-label="Send email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-
-                    <a
-                        href="https://www.linkedin.com/in/hadi-alidoust/"
-                        target="_blank"
-                        rel="noopener"
-                        aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-
-                    <a
-                        href="https://scholar.google.com/citations?user=oIqg4oYAAAAJ&hl=en"
-                        target="_blank"
-                        rel="noopener"
-                        aria-label="Google Scholar">
-                        <i class="fas fa-graduation-cap"></i>
-                    </a>
-                </div>
-            </div>
         </section>
+<!-- HOBBIES -->
+<section class="section" id="hobbies">
 
-        <!-- HOBBIES -->
-        <section class="section" id="hobbies">
-            <div class="section-header">
-                <div class="section-kicker">Beyond engineering</div>
-                <h2>Hobbies & Interests</h2>
-            </div>
+    <h2>Hobbies & Interests</h2>
 
-            <div class="skills">
-                <span class="skill">Painting & Cinema</span>
-                <span class="skill">Art & Philosophy</span>
-                <span class="skill">Running & Gym</span>
-            </div>
-        </section>
+    <div class="skills">
 
-    </main>
+        <span class="skill">Painting, cinema</span>
+
+        <span class="skill">Reading (art and philosophy)</span>
+
+        <span class="skill">Sports (running and gym)</span>
+
+
+    </div>
+
+</section>
+    </div>
 
     <footer>
-        <span>© 2026 Hadi Alidoust</span>
-        <span>RF · Microwave · Computational Imaging</span>
+        © 2026 Hadi Alidoust— Computational Imaging Engineer
     </footer>
+<script>
 
-    <script>
-        /* =====================================
-           IMAGE ZOOM + PAN
-        ====================================== */
+document.querySelectorAll('.zoom-container').forEach(container => {
 
-        document.querySelectorAll(".zoom-container").forEach(container => {
-            const img = container.querySelector("img");
+    const img = container.querySelector('img');
 
-            let scale = 1;
-            let pointX = 0;
-            let pointY = 0;
-            let start = { x: 0, y: 0 };
+    let scale = 1;
+    let pointX = 0;
+    let pointY = 0;
 
-            container.addEventListener("wheel", event => {
-                event.preventDefault();
+    let start = { x: 0, y: 0 };
 
-                const previousScale = scale;
-                const delta = event.deltaY > 0 ? -0.15 : 0.15;
+    container.addEventListener('wheel', function(e){
 
-                scale = Math.min(Math.max(1, scale + delta), 5);
+        e.preventDefault();
 
-                if (scale === 1) {
-                    pointX = 0;
-                    pointY = 0;
-                } else {
-                    const rect = container.getBoundingClientRect();
-                    const cursorX = event.clientX - rect.left - rect.width / 2;
-                    const cursorY = event.clientY - rect.top - rect.height / 2;
+        const xs = (e.clientX - pointX);
+        const ys = (e.clientY - pointY);
 
-                    const ratio = scale / previousScale;
+        const delta = e.deltaY > 0 ? -0.15 : 0.15;
 
-                    pointX = cursorX - (cursorX - pointX) * ratio;
-                    pointY = cursorY - (cursorY - pointY) * ratio;
-                }
+        scale += delta;
 
-                setTransform();
-            }, { passive:false });
+        scale = Math.min(Math.max(1, scale), 5);
 
-            container.addEventListener("mousedown", event => {
-                if (scale <= 1) return;
+        pointX = e.clientX - xs * (scale / (scale - delta));
+        pointY = e.clientY - ys * (scale / (scale - delta));
 
-                event.preventDefault();
+        setTransform();
 
-                start = {
-                    x:event.clientX - pointX,
-                    y:event.clientY - pointY
-                };
+    });
 
-                function move(event){
-                    pointX = event.clientX - start.x;
-                    pointY = event.clientY - start.y;
-                    setTransform();
-                }
+    container.addEventListener('mousedown', function(e){
 
-                function stop(){
-                    document.removeEventListener("mousemove", move);
-                    document.removeEventListener("mouseup", stop);
-                }
+        e.preventDefault();
 
-                document.addEventListener("mousemove", move);
-                document.addEventListener("mouseup", stop);
-            });
+        start = {
+            x: e.clientX - pointX,
+            y: e.clientY - pointY
+        };
 
-            container.addEventListener("dblclick", () => {
-                scale = 1;
-                pointX = 0;
-                pointY = 0;
-                setTransform();
-            });
+        function move(e){
 
-            function setTransform(){
-                const maxX = (img.clientWidth * (scale - 1)) / 2;
-                const maxY = (img.clientHeight * (scale - 1)) / 2;
+            pointX = e.clientX - start.x;
+            pointY = e.clientY - start.y;
 
-                pointX = Math.max(Math.min(pointX, maxX), -maxX);
-                pointY = Math.max(Math.min(pointY, maxY), -maxY);
+            setTransform();
+        }
 
-                img.style.transform =
-                    `translate(${pointX}px, ${pointY}px) scale(${scale})`;
-            }
-        });
+        function stop(){
 
+            document.removeEventListener('mousemove', move);
+            document.removeEventListener('mouseup', stop);
+        }
 
-        /* =====================================
-           ACTIVE NAVIGATION SECTION
-        ====================================== */
+        document.addEventListener('mousemove', move);
+        document.addEventListener('mouseup', stop);
 
-        const sections = document.querySelectorAll("main section[id]");
-        const navLinks = document.querySelectorAll(".nav-link");
+    });
 
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (!entry.isIntersecting) return;
+    function setTransform(){
 
-                navLinks.forEach(link => {
-                    link.classList.toggle(
-                        "active",
-                        link.getAttribute("href") === `#${entry.target.id}`
-                    );
-                });
-            });
-        }, {
-            rootMargin:"-35% 0px -55% 0px",
-            threshold:0
-        });
+const maxX = (img.clientWidth * (scale - 1)) / 2;
+const maxY = (img.clientHeight * (scale - 1)) / 2;
 
-        sections.forEach(section => observer.observe(section));
-    </script>
+pointX = Math.max(Math.min(pointX, maxX), -maxX);
+pointY = Math.max(Math.min(pointY, maxY), -maxY);
 
+img.style.transform =
+`translate(${pointX}px, ${pointY}px) scale(${scale})`;
+    }
+
+});
+
+</script>
 </body>
+
 </html>
